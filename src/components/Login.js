@@ -14,7 +14,6 @@ import './Login.css'
 export class Login extends React.Component{
 
     verifyUser(){
-        console.log("verificaaar +++")
         if(
         document.getElementById("email").value === localStorage.getItem("username") && 
         document.getElementById("password").value === localStorage.getItem("password")
@@ -58,7 +57,19 @@ export class Login extends React.Component{
                                 className="submit"
                                 onClick={this.verifyUser}
                             >
-                                Sign in
+                                Login
+                            </Button>
+
+                            <br/>
+                            <br/>
+
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                className="submit"
+                            >
+                                Create Account
                             </Button>
                         </form>
                     </Paper>
